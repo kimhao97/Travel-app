@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoSlab-Bold.ttf">
+            <string>RobotoSlab-Bold</string>
+        </array>
+        <array key="RobotoSlab-Light.ttf">
+            <string>RobotoSlab-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExploreViewController" customModule="HomeWork_UIKit" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="Of8-r9-Lxc" id="8o5-AY-rTA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-background" translatesAutoresizingMaskIntoConstraints="NO" id="nSV-Bp-BUI">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tkJ-Ka-Nxg">
+                    <rect key="frame" x="20" y="80" width="335" height="63.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJe-Gq-jBU">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="32"/>
+                            <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beautiful places in VietNam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORn-5Q-APH">
+                            <rect key="frame" x="0.0" y="37" width="335" height="26.5"/>
+                            <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Of8-r9-Lxc">
+                    <rect key="frame" x="0.0" y="203.5" width="375" height="429"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="429" id="sIE-3E-1Q8"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="wt3-eh-mwg">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="nSV-Bp-BUI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4nz-W8-pNr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tkJ-Ka-Nxg" secondAttribute="trailing" constant="20" id="Bin-LP-ysi"/>
+                <constraint firstItem="tkJ-Ka-Nxg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="IWO-aY-got"/>
+                <constraint firstItem="tkJ-Ka-Nxg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="NT4-y5-8MI"/>
+                <constraint firstItem="nSV-Bp-BUI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cs0-AH-aMf"/>
+                <constraint firstAttribute="bottom" secondItem="nSV-Bp-BUI" secondAttribute="bottom" id="gyO-KM-OcZ"/>
+                <constraint firstItem="nSV-Bp-BUI" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ogT-IL-f3a"/>
+                <constraint firstItem="Of8-r9-Lxc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rCb-1c-mje"/>
+                <constraint firstItem="Of8-r9-Lxc" firstAttribute="top" secondItem="tkJ-Ka-Nxg" secondAttribute="bottom" constant="60" id="ubV-l1-leh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Of8-r9-Lxc" secondAttribute="trailing" id="vqM-bL-YId"/>
+            </constraints>
+            <point key="canvasLocation" x="93" y="94"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img-background" width="4000" height="5000"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

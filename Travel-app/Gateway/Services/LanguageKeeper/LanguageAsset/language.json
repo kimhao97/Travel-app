@@ -1,0 +1,236 @@
+[
+  {
+    "KEY": "SIGN_IN",
+    "ja": "サインイン",
+    "en": "Sign in",
+    "Screen ID": null
+  },
+  {
+    "KEY": "SIGN_UP",
+    "ja": "サインアップ",
+    "en": "Sign up",
+    "Screen ID": null
+  },
+  {
+    "KEY": "LOGIN",
+    "ja": "ログイン",
+    "en": "Login",
+    "Screen ID": null
+  },
+  {
+    "KEY": "CANCEL",
+    "ja": "キャンセル",
+    "en": "Cancel",
+    "Screen ID": null
+  },
+  {
+    "KEY": "YES",
+    "ja": "取り消す",
+    "en": "Yes",
+    "Screen ID": null
+  },
+  {
+    "KEY": "LATER",
+    "ja": "あとで",
+    "en": "Later",
+    "Screen ID": null
+  },
+  {
+    "KEY": "CONFIRMATION",
+    "ja": "確認",
+    "en": "Confirmation",
+    "Screen ID": null
+  },
+  {
+    "KEY": "MAIL_ADDRESS",
+    "ja": "メールアドレス",
+    "en": "Mail address",
+    "Screen ID": null
+  },
+  {
+    "KEY": "PASSWORD",
+    "ja": "パスワード",
+    "en": "Password",
+    "Screen ID": null
+  },
+  {
+    "KEY": "SAVE_EMAIL_PASSWORD",
+    "ja": "メールアドレス、パスワードを保存",
+    "en": "Save your email address and password",
+    "Screen ID": null
+  },
+  {
+    "KEY": "PASSWORD_RESET",
+    "ja": "パスワードを忘れた/変更したい方はこちら",
+    "en": "Click here if you have forgotten / want to change your password",
+    "Screen ID": null
+  },
+  {
+    "KEY": "VERSION",
+    "ja": "バージョン",
+    "en": "Version",
+    "Screen ID": null
+  },
+  {
+    "KEY": "TITLE_RESET_PASSWORD",
+    "ja": "パスワードリセット",
+    "en": "Password reset",
+    "Screen ID": null
+  },
+  {
+    "KEY": "SEND",
+    "ja": "送信",
+    "en": "Send",
+    "Screen ID": null
+  },
+  {
+    "KEY": "PASSWORD_RESET_SCREEN",
+    "ja": "パスワード再設定画面",
+    "en": "Password reset screen",
+    "Screen ID": null
+  },
+  {
+    "KEY": "CONFIRMATION_PASSWORD",
+    "ja": "確認用パスワード",
+    "en": "Confirmation password",
+    "Screen ID": null
+  },
+  {
+    "KEY": "SET",
+    "ja": "設定する",
+    "en": "Set",
+    "Screen ID": null
+  },
+  {
+    "KEY": "PASSWORD_RESET_COMPLETE",
+    "ja": "パスワードの再設定が完了しました！",
+    "en": "Password reset is complete!",
+    "Screen ID": null
+  },
+  {
+    "KEY": "TO_CHILD_APP",
+    "ja": "こどみるアプリへ",
+    "en": "To the child viewing app",
+    "Screen ID": null
+  },
+  {
+     "KEY":"TITLE_INVITE_ACCOUNT_AUTH",
+     "ja":"アカウント認証",
+     "en":"Invite Account Verification",
+     "Screen ID":null
+  },
+  {
+     "KEY":"AUTHENTICATION_CODE",
+     "ja":"認証コード",
+     "en":"Authentication Code",
+     "Screen ID":null
+  },
+  {
+     "KEY":"CERTIFY",
+     "ja":"認証する",
+     "en":"Certify",
+     "Screen ID":null
+  },
+  {
+     "KEY":"GET_INVITATION_EMAIL",
+     "ja":"招待メールが届かない場合",
+     "en":"Click here if you do not receive the invitation email",
+     "Screen ID":null
+  },
+  {
+     "KEY":"TITLE_INVITE_ACCOUNT_REGISTER",
+     "ja":"おはあちゃんのアカウント作成",
+     "en":"Invite Account Register",
+     "Screen ID":null
+  },
+  {
+     "KEY":"PLACE_HOLDER_FIRSTNAME",
+     "ja":"保育",
+     "en":"First Name",
+     "Screen ID":null
+  },
+  {
+     "KEY":"PLACE_HOLDER_LASTNAME",
+     "ja":"太郎",
+     "en":"Last Name",
+     "Screen ID":null
+  },
+  {
+     "KEY":"TERMS_OF_SERVICE",
+     "ja":"利用規約",
+     "en":"Terms of service",
+     "Screen ID":null
+  },
+  {
+     "KEY":"PERSONAL_INFORMATION_PROTECTION",
+     "ja":"個人情報保護規約",
+     "en":"Personal information protection agreement",
+     "Screen ID":null
+  },
+  {
+     "KEY":"AGREE_TO",
+     "ja":"に同意する",
+     "en":"Agree to",
+     "Screen ID":null
+  },
+  {
+     "KEY":"REGISTER",
+     "ja":"登録する",
+     "en":"Register",
+     "Screen ID":null
+  },
+  {
+     "KEY":"MESSAGE_VALIDATE_PASSWORD",
+     "ja":"パスワードは半角英数字8文字以上50文字以下で入力してください。",
+     "en":"Please enter the password using 8 to 50 single-byte alphanumeric characters.",
+     "Screen ID":null
+  },
+  {
+     "KEY":"MESSAGE_VALIDATE_CONFIRM_PASSWORD",
+     "ja":"パスワードと確認用パスワードが一致しません。",
+     "en":"The password and confirmation password do not match.",
+     "Screen ID":null
+  },
+  {
+     "KEY":"MESSAGE_VALIDATE_EMAIL",
+     "ja":"有効なメールアドレスを入力してください。",
+     "en":"Please enter a valid email address.",
+     "Screen ID":null
+  },
+  {
+     "KEY":"MESSAGE_VALIDATE_INPUT_LENGHT",
+     "ja":"名は50文字以内で入力してください。",
+     "en":"Please enter the name within 50 characters.",
+     "Screen ID":null
+  },
+  {
+     "KEY":"MESSAGE_VALIDATE_CODE",
+     "ja":"入力内容に誤りがあります。",
+     "en":"There is an error in the code input content.",
+     "Screen ID":null
+  },
+  {
+     "KEY":"EMAIL_INVITE",
+     "ja":"ママ・パパがログイン後に、招待メールを送信することができます。",
+     "en":"Moms and dads can send invitation emails after logging in.",
+     "Screen ID":null
+  },
+  {
+     "KEY":"EMAIL_WAS_NOT_RECEIVED",
+     "ja":"ママ・パパに招待してもらう必要があります。\nメールが届かない場合は、メールアドレスに間違いがないか、こどみるからのメールを受信できるように設定されているかを確認し、改めて招待を依頼してください。",
+     "en":"I need to be invited by my mom and dad.\nIf you do not receive the e-mail, please check that your e-mail address is correct and that it is set to receive e-mails from Kodomi, and request an invitation again.",
+     "Screen ID":null
+  },
+  {
+     "KEY":"ACCOUNT_REGISTER_INTRODUCTION",
+     "ja": "招待メールを受信したメールアドレスと、招待メールに \n記載されている認証コードを入力してください。",
+     "en":"In the email address that received the invitation email and the invitation email.\nPlease enter the verification code provided..",
+     "Screen ID":null
+  },
+  {
+     "KEY":"CLICK_HERE_TO_LOGIN",
+     "ja": "ログインはこちら",
+     "en":"Click Here To Log In",
+     "Screen ID":null
+  }
+]

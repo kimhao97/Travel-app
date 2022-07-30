@@ -1,0 +1,6 @@
+framework module NeoNetworking {
+  umbrella header "NeoNetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}

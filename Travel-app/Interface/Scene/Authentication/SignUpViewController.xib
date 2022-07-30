@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoSlab-Bold.ttf">
+            <string>RobotoSlab-Bold</string>
+        </array>
+        <array key="RobotoSlab-Regular.ttf">
+            <string>RobotoSlab-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="HomeWork_UIKit" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmPasswordField" destination="STF-bC-2CK" id="rtD-p0-xSd"/>
+                <outlet property="mailTextField" destination="0BR-rJ-vqu" id="3gZ-93-y8k"/>
+                <outlet property="passwordField" destination="TLK-C4-AcR" id="kjJ-av-F5S"/>
+                <outlet property="signUpButton" destination="Jgz-UK-S1G" id="Wdd-u0-iMm"/>
+                <outlet property="userTextField" destination="Pmg-QL-Edz" id="FSo-Vs-Jat"/>
+                <outlet property="view" destination="xdd-Ic-oDX" id="Wsv-8Q-oRE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="xdd-Ic-oDX">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkX-1w-c4x">
+                    <rect key="frame" x="157" y="44" width="100" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Jtm-Tt-Eda"/>
+                        <constraint firstAttribute="height" constant="60" id="K0t-z6-gXv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgz-UK-S1G">
+                    <rect key="frame" x="32" y="409" width="350" height="50"/>
+                    <color key="backgroundColor" name="appOrange"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="fbX-E3-Xna"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="16"/>
+                    <state key="normal" title="Sign up">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="signUpWithSender:" destination="-1" eventType="touchUpInside" id="Kj8-fZ-1zf"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="y3U-4b-Iah">
+                    <rect key="frame" x="32" y="129" width="350" height="245"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pmg-QL-Edz" customClass="CustomAuthenticaion" customModule="HomeWork_UIKit" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="mHT-6f-ddv"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isPassword" value="NO"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="ic-user"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Name"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0BR-rJ-vqu" customClass="CustomAuthenticaion" customModule="HomeWork_UIKit" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="65" width="350" height="50"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="4Bz-tu-d2o"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isPassword" value="NO"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="ic-mail"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Email"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLK-C4-AcR" customClass="CustomAuthenticaion" customModule="HomeWork_UIKit" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="130" width="350" height="50"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="S3J-BN-TWg"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isPassword" value="YES"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Password"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="ic-password"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STF-bC-2CK" customClass="CustomAuthenticaion" customModule="HomeWork_UIKit" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="195" width="350" height="50"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Fpx-FN-088"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isPassword" value="YES"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Confirm Password"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="ic-password"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="350" id="Wyk-XI-WAh"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qAu-Yg-Hv9">
+                    <rect key="frame" x="88" y="822" width="238" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you have an Account?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57v-Uq-32E">
+                            <rect key="frame" x="0.0" y="0.0" width="188" height="30"/>
+                            <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueX-HS-oKR">
+                            <rect key="frame" x="198" y="0.0" width="40" height="30"/>
+                            <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="16"/>
+                            <state key="normal" title="Login">
+                                <color key="titleColor" name="appOrange"/>
+                            </state>
+                            <connections>
+                                <action selector="loginWithSender:" destination="-1" eventType="touchUpInside" id="Ncp-M2-Bgc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="tzq-rH-CD1"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fUB-PY-GxB"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Jgz-UK-S1G" firstAttribute="leading" secondItem="fUB-PY-GxB" secondAttribute="leading" constant="32" id="1GT-ck-uS7"/>
+                <constraint firstItem="qkX-1w-c4x" firstAttribute="top" secondItem="fUB-PY-GxB" secondAttribute="top" priority="250" id="FuC-KE-3xI"/>
+                <constraint firstItem="qAu-Yg-Hv9" firstAttribute="centerX" secondItem="xdd-Ic-oDX" secondAttribute="centerX" id="Gyl-0Q-doP"/>
+                <constraint firstItem="fUB-PY-GxB" firstAttribute="bottom" secondItem="qAu-Yg-Hv9" secondAttribute="bottom" constant="10" id="OaL-Nv-PzC"/>
+                <constraint firstItem="y3U-4b-Iah" firstAttribute="centerX" secondItem="xdd-Ic-oDX" secondAttribute="centerX" id="Xgi-EL-WWO"/>
+                <constraint firstItem="Jgz-UK-S1G" firstAttribute="top" secondItem="y3U-4b-Iah" secondAttribute="bottom" constant="35" id="Yi4-Ic-emn"/>
+                <constraint firstItem="qkX-1w-c4x" firstAttribute="centerX" secondItem="xdd-Ic-oDX" secondAttribute="centerX" id="cBh-2J-VuV"/>
+                <constraint firstItem="y3U-4b-Iah" firstAttribute="top" secondItem="qkX-1w-c4x" secondAttribute="bottom" constant="25" id="gp4-Ry-Fb8"/>
+                <constraint firstItem="fUB-PY-GxB" firstAttribute="trailing" secondItem="Jgz-UK-S1G" secondAttribute="trailing" constant="32" id="yXR-7a-WX4"/>
+            </constraints>
+            <point key="canvasLocation" x="93" y="96"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic-mail" width="14" height="11"/>
+        <image name="ic-password" width="9" height="11"/>
+        <image name="ic-user" width="10" height="12"/>
+        <namedColor name="appOrange">
+            <color red="0.9882352941176471" green="0.37647058823529411" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

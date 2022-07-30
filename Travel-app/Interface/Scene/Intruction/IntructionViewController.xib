@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntructionViewController" customModule="HomeWork_UIKit" customModuleProvider="target">
+            <connections>
+                <outlet property="personLable" destination="rxd-ll-FEA" id="8FU-0G-qgx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="8wI-aI-i6O">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pR8-IL-5L0">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1019.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-china" translatesAutoresizingMaskIntoConstraints="NO" id="Eui-pf-JLi">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="XGR-Yw-sA2"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2tF-qp-Wns">
+                                    <rect key="frame" x="10" y="210" width="394" height="60"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-putin" translatesAutoresizingMaskIntoConstraints="NO" id="aUD-Tt-7Zi">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="A6K-9m-ax4"/>
+                                                <constraint firstAttribute="height" constant="60" id="oBU-ai-Osv"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="heY-Lw-1OU">
+                                            <rect key="frame" x="70" y="0.0" width="324" height="60"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Article by" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7N-Mq-yUe">
+                                                    <rect key="frame" x="0.0" y="0.0" width="324" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="IOa-gd-kAI"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Person 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxd-ll-FEA">
+                                                    <rect key="frame" x="0.0" y="30" width="324" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="fIH-zx-pxr"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rxd-ll-FEA" firstAttribute="top" secondItem="B7N-Mq-yUe" secondAttribute="bottom" id="8oi-NA-A0f"/>
+                                                <constraint firstAttribute="trailing" secondItem="rxd-ll-FEA" secondAttribute="trailing" id="Cs4-jq-xpc"/>
+                                                <constraint firstAttribute="trailing" secondItem="B7N-Mq-yUe" secondAttribute="trailing" id="Vgw-53-CtB"/>
+                                                <constraint firstItem="B7N-Mq-yUe" firstAttribute="leading" secondItem="heY-Lw-1OU" secondAttribute="leading" id="WuE-Xz-Kv0"/>
+                                                <constraint firstItem="B7N-Mq-yUe" firstAttribute="top" secondItem="heY-Lw-1OU" secondAttribute="top" id="vuO-oe-L01"/>
+                                                <constraint firstItem="rxd-ll-FEA" firstAttribute="leading" secondItem="heY-Lw-1OU" secondAttribute="leading" id="xZi-gb-HE4"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="D8A-SR-9Jc"/>
+                                    </constraints>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Biden Sets New Vaccine Goal: 4,000 Die in Brazil: Virus Update" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Z7-HH-kpr">
+                                    <rect key="frame" x="10" y="280" width="394" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="80" id="RMw-Bj-Q7P"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORS-J2-Iya">
+                                    <rect key="frame" x="10" y="370" width="394" height="649.5"/>
+                                    <mutableString key="text">U.S. President Joe Biden said he wants all American adults to be eligible for a coronavirus vaccine by April 19, two weeks earlier than his previous goal. Brazil surpassed 4,000 Covid-19 deaths in one day for the first time.
+
+A study of 33 adults showed antibodies to the virus persist for at least six months after receiving the second dose of Moderna Inc.’s vaccine. The U.K. will add the shot to its vaccine roll-out starting Wednesday.
+
+The Centers for Disease Control and Prevention said restrictions on U.S. cruise ships may be eased by the summer, after Carnival Corp. threatened to move its vessels to other markets.
+
+Key Developments:
+Global Tracker: Cases pass 132.2 million; deaths exceed 2.8 million
+Vaccine Tracker: More than 689 million shots given worldwide
+Covid Boosts Risks for Mental, Neurological Disorders in Study
+The Future of Travel in the Covid-19 Era
+How pandemics change the course of history: Stephen Mihm
+Why the mutated coronavirus variants are so worrisome: QuickTake
+Subscribe to a daily update on the virus from Bloomberg’s Prognosis team here. Click CVID on the terminal for global data on cases and deaths.</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiK-0t-p29">
+                                    <rect key="frame" x="10" y="210" width="394" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="80" id="ndf-mM-JzS"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="detailPressWithSender:" destination="-1" eventType="touchUpInside" id="zDd-Kw-4L7"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="9Z7-HH-kpr" secondAttribute="trailing" constant="10" id="GKJ-Zq-zlR"/>
+                                <constraint firstItem="ORS-J2-Iya" firstAttribute="top" secondItem="9Z7-HH-kpr" secondAttribute="bottom" constant="10" id="JPG-kI-G50"/>
+                                <constraint firstItem="9Z7-HH-kpr" firstAttribute="leading" secondItem="pR8-IL-5L0" secondAttribute="leading" constant="10" id="K5V-oF-Y21"/>
+                                <constraint firstItem="Eui-pf-JLi" firstAttribute="leading" secondItem="pR8-IL-5L0" secondAttribute="leading" id="Kq5-pd-8fX"/>
+                                <constraint firstItem="2tF-qp-Wns" firstAttribute="top" secondItem="Eui-pf-JLi" secondAttribute="bottom" constant="10" id="LmN-PO-HQo"/>
+                                <constraint firstAttribute="trailing" secondItem="Eui-pf-JLi" secondAttribute="trailing" id="NJ3-X6-TE7"/>
+                                <constraint firstAttribute="trailing" secondItem="2tF-qp-Wns" secondAttribute="trailing" constant="10" id="RUA-tw-Wen"/>
+                                <constraint firstAttribute="bottom" secondItem="ORS-J2-Iya" secondAttribute="bottom" id="Sva-kw-xmd"/>
+                                <constraint firstItem="9Z7-HH-kpr" firstAttribute="top" secondItem="2tF-qp-Wns" secondAttribute="bottom" constant="10" id="aE6-t7-3PI"/>
+                                <constraint firstItem="xiK-0t-p29" firstAttribute="top" secondItem="Eui-pf-JLi" secondAttribute="bottom" constant="10" id="d3r-L5-Rp5"/>
+                                <constraint firstAttribute="trailing" secondItem="ORS-J2-Iya" secondAttribute="trailing" constant="10" id="hqH-iD-Dno"/>
+                                <constraint firstItem="ORS-J2-Iya" firstAttribute="leading" secondItem="pR8-IL-5L0" secondAttribute="leading" constant="10" id="ky5-hk-eim"/>
+                                <constraint firstItem="xiK-0t-p29" firstAttribute="leading" secondItem="pR8-IL-5L0" secondAttribute="leading" constant="10" id="oNK-CV-PKv"/>
+                                <constraint firstItem="Eui-pf-JLi" firstAttribute="top" secondItem="pR8-IL-5L0" secondAttribute="top" id="orC-y8-8ZT"/>
+                                <constraint firstItem="2tF-qp-Wns" firstAttribute="leading" secondItem="pR8-IL-5L0" secondAttribute="leading" constant="10" id="sRl-l3-xpa"/>
+                                <constraint firstAttribute="trailing" secondItem="xiK-0t-p29" secondAttribute="trailing" constant="10" id="wWg-kT-FJ4"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="pR8-IL-5L0" secondAttribute="trailing" id="Dsd-lN-sw8"/>
+                        <constraint firstItem="pR8-IL-5L0" firstAttribute="top" secondItem="8wI-aI-i6O" secondAttribute="top" id="OEw-KM-5NI"/>
+                        <constraint firstAttribute="bottom" secondItem="pR8-IL-5L0" secondAttribute="bottom" id="i8E-Yi-ojn"/>
+                        <constraint firstItem="pR8-IL-5L0" firstAttribute="leading" secondItem="8wI-aI-i6O" secondAttribute="leading" id="x2s-ky-yk4"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8wI-aI-i6O" secondAttribute="bottom" id="GcK-hf-QcQ"/>
+                <constraint firstItem="pR8-IL-5L0" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="PWd-Tk-f4w"/>
+                <constraint firstItem="8wI-aI-i6O" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RHI-2m-Ih7"/>
+                <constraint firstItem="8wI-aI-i6O" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jVb-6S-KSD"/>
+                <constraint firstItem="8wI-aI-i6O" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="x4m-Xx-XlB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8wI-aI-i6O" secondAttribute="trailing" id="zL6-fj-F3e"/>
+            </constraints>
+            <point key="canvasLocation" x="-197.10144927536234" y="89.732142857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img-china" width="1800" height="1200"/>
+        <image name="img-putin" width="600" height="400"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

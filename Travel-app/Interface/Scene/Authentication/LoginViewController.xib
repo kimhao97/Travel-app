@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoSlab-Bold.ttf">
+            <string>RobotoSlab-Bold</string>
+        </array>
+        <array key="RobotoSlab-Regular.ttf">
+            <string>RobotoSlab-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="HomeWork_UIKit" customModuleProvider="target">
+            <connections>
+                <outlet property="loginButton" destination="B9v-kK-6j4" id="ivC-Cn-IQq"/>
+                <outlet property="passwordTextField" destination="TlW-Ph-ocF" id="Mib-Ie-4iS"/>
+                <outlet property="userTextField" destination="HYy-7k-tqy" id="fJL-d4-74n"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlh-L3-tit">
+                    <rect key="frame" x="157" y="144" width="100" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="ALc-sL-m9C"/>
+                        <constraint firstAttribute="width" constant="100" id="D62-ga-HL9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HDq-s3-skB">
+                    <rect key="frame" x="32" y="254" width="350" height="120"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oee-Dh-DT1">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="120"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HYy-7k-tqy" customClass="CustomAuthenticaion" customModule="HomeWork_UIKit" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="b7j-Gn-HK9"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="image" value="ic-mail"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isPassword" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Your email"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TlW-Ph-ocF" customClass="CustomAuthenticaion" customModule="HomeWork_UIKit" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="70" width="350" height="50"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="image" value="ic-password"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isPassword" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Password"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="TlW-Ph-ocF" firstAttribute="height" secondItem="HYy-7k-tqy" secondAttribute="height" id="Qub-g4-fsA"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="350" id="nPm-ku-uw2"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="RfA-L2-MSx">
+                    <rect key="frame" x="32" y="409" width="350" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9v-kK-6j4">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
+                            <color key="backgroundColor" name="appOrange"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="350" id="X9i-3q-P5l"/>
+                                <constraint firstAttribute="height" constant="50" id="t0M-bY-eBu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="16"/>
+                            <state key="normal" title="Sign in">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="signIn:" destination="-1" eventType="touchUpInside" id="H3h-QB-wjD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xPD-F9-IJY">
+                    <rect key="frame" x="82.5" y="822" width="249.5" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have account?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0p-5O-NAK">
+                            <rect key="frame" x="0.0" y="0.0" width="148.5" height="30"/>
+                            <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6Y-G8-9GQ">
+                            <rect key="frame" x="158.5" y="0.0" width="91" height="30"/>
+                            <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="16"/>
+                            <state key="normal" title="Sign up here">
+                                <color key="titleColor" name="appOrange"/>
+                            </state>
+                            <connections>
+                                <action selector="signUp:" destination="-1" eventType="touchUpInside" id="GhE-ws-6Eu"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="tnf-Hj-uDg"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="RfA-L2-MSx" firstAttribute="top" secondItem="HDq-s3-skB" secondAttribute="bottom" constant="35" id="1Zu-Bh-8Md"/>
+                <constraint firstItem="HDq-s3-skB" firstAttribute="top" secondItem="Jlh-L3-tit" secondAttribute="bottom" constant="50" id="HTK-vN-7wP"/>
+                <constraint firstItem="RfA-L2-MSx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SuZ-VN-IfM"/>
+                <constraint firstItem="HDq-s3-skB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WVc-1I-ZQf"/>
+                <constraint firstItem="xPD-F9-IJY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YPM-42-opw"/>
+                <constraint firstItem="Jlh-L3-tit" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" priority="250" constant="100" id="aCc-SC-3nq"/>
+                <constraint firstItem="Jlh-L3-tit" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cTQ-id-gTS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xPD-F9-IJY" secondAttribute="bottom" constant="10" id="x18-sb-TCD"/>
+            </constraints>
+            <point key="canvasLocation" x="93" y="96"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic-mail" width="14" height="11"/>
+        <image name="ic-password" width="9" height="11"/>
+        <namedColor name="appOrange">
+            <color red="0.9882352941176471" green="0.37647058823529411" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SpotTableViewCell" customModule="HomeWork_UIKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="310" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6BK-aJ-8UH">
+                        <rect key="frame" x="0.0" y="5" width="125" height="72"/>
+                        <color key="backgroundColor" name="appGray"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="125" id="4Nb-UL-nAy"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jcb-cb-T4D">
+                        <rect key="frame" x="135" y="5" width="175" height="41"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaE-4o-45t">
+                                <rect key="frame" x="0.0" y="0.0" width="175" height="27.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbU-KN-wLB">
+                                <rect key="frame" x="0.0" y="27.5" width="175" height="13.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="RaE-4o-45t" firstAttribute="leading" secondItem="jcb-cb-T4D" secondAttribute="leading" id="8qI-Le-KJe"/>
+                            <constraint firstAttribute="trailing" secondItem="RaE-4o-45t" secondAttribute="trailing" id="ThW-Jm-yIY"/>
+                            <constraint firstItem="RaE-4o-45t" firstAttribute="height" secondItem="jcb-cb-T4D" secondAttribute="height" multiplier="2:3" id="gyl-Gp-rgi"/>
+                            <constraint firstItem="RaE-4o-45t" firstAttribute="top" secondItem="jcb-cb-T4D" secondAttribute="top" id="zbo-5S-a9v"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6BK-aJ-8UH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MlJ-s7-qKD"/>
+                    <constraint firstItem="jcb-cb-T4D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="NJZ-fx-i6b"/>
+                    <constraint firstAttribute="trailing" secondItem="jcb-cb-T4D" secondAttribute="trailing" id="TPX-VA-xgg"/>
+                    <constraint firstItem="6BK-aJ-8UH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="d4m-PB-cVR"/>
+                    <constraint firstItem="jcb-cb-T4D" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="1:2" id="jCY-hb-1rQ"/>
+                    <constraint firstAttribute="bottom" secondItem="6BK-aJ-8UH" secondAttribute="bottom" constant="5" id="jqb-lk-gZz"/>
+                    <constraint firstItem="jcb-cb-T4D" firstAttribute="leading" secondItem="6BK-aJ-8UH" secondAttribute="trailing" constant="10" id="nLu-Hc-Y3h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="KbU-KN-wLB" id="5qb-D3-BT3"/>
+                <outlet property="spotImage" destination="6BK-aJ-8UH" id="z2R-wA-45m"/>
+                <outlet property="titleLabel" destination="RaE-4o-45t" id="H3g-ci-z5o"/>
+            </connections>
+            <point key="canvasLocation" x="92.753623188405811" y="57.589285714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="appGray">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
